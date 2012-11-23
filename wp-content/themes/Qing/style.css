@@ -1,0 +1,388 @@
+/*  
+Theme Name: 大侠轻
+Theme URI: http://www.web589.com/posts/1677.html
+Description: 轻博客风格时尚简洁主题.
+Version: 1.0
+Author: 大侠
+Author URI: http://www.web589.com/posts/1677.html
+*/
+
+/*全局样式*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body{
+	background:url(images/bg.png) repeat-x;
+	font-size: 12px;
+	font-family: "Microsoft Yahei", "微软雅黑", Tahoma, Arial, Helvetica, STHeiti;
+	background-color:#dbe0e3;
+}
+img{
+	border:none;
+}
+.cb{
+	clear:both;
+}
+a, a:visited, a:active{
+	color:#144668;
+	text-decoration:none;
+}
+a:hover{
+	color:#1E3B50;
+}
+
+
+/*header*/
+#top{
+	background-color:#144465;
+}
+#header{
+	width:900px;
+	height:70px;
+	margin:0 auto;
+}
+#h_left{
+    color:white;
+    font-size:14px; 
+	float:left;  
+}
+#h_left span{
+	margin-left:5px;
+}
+#h_left a,#h_left span{
+	display:block;
+	float:left;
+}
+#h_left span,#top_nav{
+    margin-top:35px;
+}
+#h_right{
+	float:right;
+}
+#top_nav li{
+	float:left;
+	list-style-type:none;
+	margin-left:10px;
+}
+#top_nav li a{
+	color:#A0B3C0;
+	font-size:14px;
+	text-decoration:none;
+}
+#top_nav li a:hover{
+	color:white;
+}
+#top_nav li.current-menu-item a{
+	color:white;
+}
+
+
+/*main*/
+#main{
+	width:900px;
+	margin:0 auto;
+	margin-top:20px;
+	clear:both;
+}
+#content{
+	width:625px;
+	float:left;
+}
+.thumbnail img{
+	width:64px;
+	height:64px;
+}
+.thumbnail{
+	float:left;
+}
+.post, .type-page{
+	width:544px;
+	float:right;
+	margin-bottom:20px;
+	color:#444;
+	position:relative;
+}
+.triangle{
+	width:13px;
+	height:20px;
+	position:absolute;
+	background: url(images/feed-icons.png) no-repeat 0 -150px;
+	top:20px;
+	left:-11px;	
+}
+.p_top{
+	background:url(images/feed-bg-sprites.png) no-repeat;
+	padding:10px 20px 0 20px;	
+}
+.post h2,.post h1, .page h1{
+	margin-bottom:10px;
+}
+.post h2 a,.post h1 a, .page h1{
+	font-size:22px;
+	text-decoration:none;
+}
+.p_middle{
+	background:url(images/feed-bg-sprites.png) repeat-y -1200px top;
+	padding:10px 20px;
+}
+.p_bottom{
+	background:url(images/feed-bg-sprites.png) no-repeat -600px bottom;
+	padding:0 20px 20px 20px;
+	color:#b4b4b4;
+}
+.content{
+	font-size:14px;
+	line-height:20px;
+	margin:35px 0 10px 0;
+}
+.single .content, .page .content{
+	text-indent:2em;
+}
+.single .content p, .page .content p{
+	margin-bottom:10px;
+}
+.single .content img, .page .content img{
+	max-width:90%;
+	-width:expression(width>450?"450px":true);
+	height:auto;
+}
+.time,.meta a,.more a{
+	color:#b4b4b4;
+}
+.meta a:hover,.more a:hover{
+	color:#8f8f8f;
+}
+.time{
+	float:right;
+}
+.meta{
+	float:left;
+}
+.p_middle .more a{
+	text-decoration:underline;
+}
+.post-edit-link{
+	margin-left:15px;
+}
+.cat a,.tags a{
+	background-color:#144668;
+	color:#fff;
+	text-decoration:none;
+	padding:2px 5px;
+	margin-right:5px;
+}
+.cat a:hover,.tags a:hover{
+	background-color:#1E3B50;
+}
+#pages{
+	text-align:center;
+	color:#8F8F8F;
+}
+#page_navi{
+	text-align:center;
+}
+h1#archive_title{
+	font-size:22px;
+	margin:0px 0 10px 100px;
+}
+#crumbs{
+	margin-left:100px;
+	margin-bottom:10px;
+	color:#8f8f8f;
+}
+
+
+/*sidebar*/
+#sidebar{
+	width:250px;
+	float:right;
+}
+#sidebar li{
+	list-style-type:none;
+}
+.widget{
+	margin:0px 0 20px 0;
+}
+.widgettitle, .widget #searchform{
+	background-color:white;
+	border:1px solid #C2C5C7;
+	font-size:16px;
+	padding:7px;
+}
+.widget ul, .widget .tagcloud, .widget #calendar_wrap{
+	border: 1px solid #C7CACC;
+	border-top:none;
+	background-color:#ddd;
+}
+.widget ul li{
+	border-bottom: 1px solid #C6C8CB;	
+	height:36px;
+	overflow:hidden;
+	padding:0px 5px;
+}
+.widget a{
+	font-size:13px;
+	line-height:36px;
+	text-decoration:none;
+}
+.widget #wp-calendar{
+    width:95%;
+    text-align:center;
+}
+.widget #wp-calendar caption{
+    font-size:14px;
+    padding:10px 0;
+}
+.widget .tagcloud{
+	padding:0 5px;
+}
+.widget #searchform input#s{
+    height:20px;
+    line-height:20px;
+    width:200px;
+    margin-left:2px;
+    border:0 solid white;
+	font-size:13px;
+	color:#AFB0B0;
+}
+#searchsubmit{
+	width:36px;
+	height:36px;
+	background: url(images/sidemenu.png) no-repeat -1143px 8px;
+	border:0;
+	cursor:pointer;
+	margin-top:-30px;
+	display:block;
+	float:right;	
+}
+
+
+/*comments*/
+#comments_list{
+	border: 1px solid #C7CACC;
+	border-top:none;
+	background-color:#ddd;
+	color:#B4B4B4;
+	line-height:160%;	
+}
+#comments_list p{
+	color:#444;
+	text-indent:2em;
+	margin:5px 0;
+}
+#comments_list .depth-1{
+	border-bottom:1px solid #C7CACC;
+}
+#comments_list li{
+	list-style-type:none;
+	padding:5px;
+}
+.comment-author img{
+	width:20px;
+	height:20px;
+}
+#comments_list .children{
+	margin-left:20px;
+}
+#respond{
+	margin:20px 0;
+}
+h3#reply-title{
+	font-size:14px;
+	margin-bottom:10px;
+}
+.comment-form-comment label{
+	display:block;
+	margin:10px 0;
+}
+.form-allowed-tags{
+	color:#B4B4B4;
+}
+.required,.comment-awaiting-moderation{
+	color:red;
+}
+input#author{
+	margin-left:24px;
+}
+input#url{
+	margin-left:34px;
+}
+.comment-form-author,.comment-form-email,.comment-form-url{
+	margin:5px;
+}
+
+/*footer*/
+#footer{
+	width:900px;
+	margin:20px auto;
+	padding-top:50px;
+	clear:both;
+}
+#friendlink h4{
+    font-size:14px;
+    margin-bottom:10px;
+}
+#friendlink li{
+	float:left;
+	list-style-type:none;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+#copyright{
+	float:left;
+}
+#w_link{
+	float:right;
+	margin-bottom:20px;
+}
+
+/*hack*/
+#ie7 .widget #searchform input#s{
+	width:180px;
+	margin-left:10px;
+}
+#ie7 .widget #searchform input#s{
+	margin-left:-15px;
+	width:200px;
+}
+#ie7 #searchsubmit{
+	margin-top:-40px;
+}
+#ie6 #searchsubmit{
+	margin-top:-40px;
+	margin-right:5px;
+}
+#ie7 .search-no-results .widget,#ie6 .search-no-results .widget{
+	width:250px;
+}
+#ie7 .search-no-results .widget #searchform input#s{
+	margin-left:0px;
+}
+#ie7 .search-no-results #searchsubmit{
+	margin-top:-32px;
+}
+#ie6 .search-no-results #searchsubmit{
+	margin-top:-30px;
+	margin-right:0;
+}
+#ie6 .meta a,#ie6 .more a{
+	color:#b4b4b4;
+}
+#ie6 .cat a,#ie6 .tags a{
+	color:#fff;
+}
